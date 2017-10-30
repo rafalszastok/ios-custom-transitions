@@ -15,15 +15,14 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = UIColor(red: 1.0, green: 0.7, blue: 0.7, alpha: 1.0)
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let threeSeconds = DispatchTime.now() + DispatchTimeInterval.seconds(3)
-        view.backgroundColor = .blue
-        DispatchQueue.main.asyncAfter(deadline: threeSeconds) {
-            self.dismiss(animated: true, completion: nil)
-        }
+//        let threeSeconds = DispatchTime.now() + DispatchTimeInterval.seconds(3)
+//        DispatchQueue.main.asyncAfter(deadline: threeSeconds) {
+//            self.dismiss(animated: true, completion: nil)
+//        }
     }
 }
