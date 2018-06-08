@@ -37,7 +37,7 @@ class PopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 
         toView.alpha = 0.0
         toView.layer.cornerRadius = 25
-        toView.layer.transform = CATransform3DScale(CATransform3DIdentity, 0.5, 0.5, 1.0)
+        toView.layer.transform = CATransform3DScale(CATransform3DIdentity, 0.7, 0.7, 1.0)
 
         AnimationHelper.perspectiveTransformForContainerView(containerView: containerView)
 
@@ -53,7 +53,7 @@ class PopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
                 })
 
                 UIView.addKeyframe(withRelativeStartTime:1/3, relativeDuration: 1/3, animations: {
-                    snapshot.layer.transform = CATransform3DMakeScale(0.5, 0.5, 1.0)
+                    snapshot.layer.transform = CATransform3DMakeScale(0.7, 0.7, 1.0)
                 })
                 UIView.addKeyframe(withRelativeStartTime:2/3, relativeDuration: 1/3, animations: {
                     toView.alpha = 1.0
