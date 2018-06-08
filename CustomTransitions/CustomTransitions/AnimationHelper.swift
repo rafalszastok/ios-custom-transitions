@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct AnimationHelper {
+final class AnimationHelper {
 
     static func perspectiveTransformForContainerView(containerView: UIView) {
         var transform = CATransform3DIdentity
