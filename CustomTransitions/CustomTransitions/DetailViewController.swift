@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+final class DetailViewController: UIViewController {
     @IBAction func dismissAction(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
